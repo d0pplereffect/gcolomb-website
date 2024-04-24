@@ -1,0 +1,123 @@
+@import "../../styles/variables.scss";
+
+.container {
+  margin-top: $space-stack-xxlarge;
+  margin-inline: 10%;
+  color: $white;
+}
+
+.title {
+  font-family: $font-roboto-mono;
+  font-weight: 700;
+  font-size: ms(11);
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 14px;
+}
+
+.skills {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  p {
+    font-family: $font-varta;
+    font-size: ms(8);
+    font-weight: 500;
+  }
+}
+
+.skillImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 1px solid $white;
+  img {
+    width: 75px;
+  }
+}
+
+.skillImageContainer .skill .history {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.historyItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 17px;
+  padding: $space-inset-large;
+  background: $border;
+  background-repeat: no-repeat;
+
+  img {
+    width: 100px;
+  }
+}
+
+.historyItemDetail {
+  font-family: $font-roboto-mono;
+  h3 {
+    margin: 0;
+    font-size: ms(8);
+    font-weight: 500;
+  }
+  p {
+    font-size: ms(4);
+    font-weight: 300;
+  }
+  ul {
+    margin-top: $space-stack-tiny;
+    margin-left: $space-inline-medium;
+    padding-left: $space-inline-medium;
+    font-size: ms(6);
+    list-style-position: inside;
+    list-style-type: disc;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    margin-inline: $base-line-height;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .history {
+    width: 100%;
+    gap: 9px;
+    padding: 0;
+
+    .historyItem {
+      margin-bottom: $space-stack-large;
+    }
+  }
+}

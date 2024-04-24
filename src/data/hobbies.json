@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Jeux vidéos",
+    "imageSrc": "images/hobbies/eldenring.webp",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+  },
+  {
+    "title": "Musique",
+    "imageSrc": "images/hobbies/janedoe.png",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+  },
+  {
+    "title": "Composition",
+    "imageSrc": "images/hobbies/microfreak.jpeg",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+  },
+  {
+    "title": "Culture japonaise",
+    "imageSrc": "images/hobbies/japon.jpeg",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+  }
+]

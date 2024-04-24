@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 300px;
+  min-height: 540px;
+  padding: 18px 24px;
+  background: $border;
+  background-repeat: no-repeat;
+}
+
+.image {
+  width: 300px;
+  margin-bottom: 26px;
+}
+
+.title {
+  font-family: $font-roboto-mono;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.description {
+  margin-top: $space-stack-tiny;
+  font-size: ms(6);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 830px) {
+  .card {
+    margin-bottom: $space-stack-large;
+  }
+}

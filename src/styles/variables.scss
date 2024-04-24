@@ -1,0 +1,75 @@
+@import "../../node_modules/modularscale-sass/stylesheets/modularscale";
+
+$modularscale: (
+  base: 10px,
+  ratio: 1.125,
+);
+
+// ------
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+$color-primary: #860004;
+$color-primary-dark: #290001;
+
+$grey: #1c1c1c;
+
+// ------
+// Fonts
+$font-roboto-mono: "Roboto Mono Variable", monospace;
+$font-varta: "Varta Variable", Helvetica, Arial, sans-serif;
+
+// Helper variables
+$base-font-size: ms(4);
+$base-line-height: ms(7);
+
+$paragraph: $base-font-size;
+
+$border: linear-gradient($white, $white) top left / 150px 2px,
+  linear-gradient($white, $white) top left / 2px 100px,
+  linear-gradient($white, $white) bottom right / 150px 2px,
+  linear-gradient($white, $white) bottom right / 2px 100px;
+
+$border-red: linear-gradient($color-primary, $color-primary) top left / 150px
+    2px,
+  linear-gradient($color-primary, $color-primary) top left / 2px 100px,
+  linear-gradient($color-primary, $color-primary) bottom right / 150px 2px,
+  linear-gradient($color-primary, $color-primary) bottom right / 2px 100px;
+
+// --------
+/// Spacing
+// Inset
+$space-inset-tiny: $base-line-height/2;
+$space-inset-small: $base-line-height/1.5;
+$space-inset-medium: $base-line-height;
+$space-inset-large: $base-line-height * 1.5;
+$space-inset-xlarge: $base-line-height * 2;
+$space-inset-xxlarge: $base-line-height * 3;
+
+$space-inset: $space-inset-medium;
+
+$space-inset-squish-tiny: $base-line-height/3 $base-line-height/2;
+$space-inset-squish-small: $base-line-height/2 $base-line-height/1.5;
+$space-inset-squish-medium: $base-line-height/1.5 $base-line-height;
+$space-inset-squish-large: $base-line-height $base-line-height * 1.5;
+$space-inset-squish-xlarge: $base-line-height * 1.5 $base-line-height * 2;
+$space-inset-squish-xlarge: $base-line-height * 2 $base-line-height * 3;
+
+$space-inset-stretch: $base-line-height $base-line-height/2;
+
+// Stack
+$space-stack-tiny: $base-line-height/2;
+$space-stack-small: $base-line-height/1.5;
+$space-stack-medium: $base-line-height;
+$space-stack-large: $base-line-height * 1.5;
+$space-stack-xlarge: $base-line-height * 2;
+$space-stack-xxlarge: $base-line-height * 3;
+
+// Inline
+$space-inline-tiny: $base-font-size/2;
+$space-inline-small: $base-font-size/1.5;
+$space-inline-medium: $base-font-size;
+$space-inline-large: $base-font-size * 1.5;
+$space-inline-xlarge: $base-font-size * 2;
+$space-inline-xxlarge: $base-font-size * 3;

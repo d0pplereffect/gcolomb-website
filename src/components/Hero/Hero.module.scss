@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: $space-stack-xlarge;
+  margin-inline: 10%;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: $space-inline-xxlarge;
+  color: $white;
+  z-index: 1;
+}
+
+.title {
+  margin-bottom: $space-stack-medium;
+  font-family: $font-roboto-mono;
+  font-size: ms(16);
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.description {
+  margin-bottom: $space-stack-xlarge;
+  font-family: $font-varta;
+  font-size: ms(10);
+}
+
+.heroImg {
+  width: 25vw;
+  z-index: 1;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+    margin-inline: $base-line-height;
+  }
+
+  .content {
+    align-items: center;
+    margin: 0;
+  }
+}

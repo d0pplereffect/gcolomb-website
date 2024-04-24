@@ -1,0 +1,30 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "images/skills/html-icon.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "images/skills/css-icon.png"
+  },
+  {
+    "title": "Javascript",
+    "imageSrc": "images/skills/javascript-icon.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "images/skills/git-icon.png"
+  },
+  {
+    "title": "Photoshop",
+    "imageSrc": "images/skills/photoshop-icon.png"
+  },
+  {
+    "title": "XD",
+    "imageSrc": "images/skills/xd-icon.png"
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "images/skills/figma-icon.png"
+  }
+]

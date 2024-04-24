@@ -1,0 +1,26 @@
+[
+  {
+    "role": "Développeur Front UI",
+    "organisation": "SITA",
+    "startDate": "Juin, 2018",
+    "endDate": "Juin, 2023",
+    "experiences": [
+      "Désign des nouvelles features",
+      "Développement et intégration",
+      "Gestion d'équipe"
+    ],
+    "imageSrc": "images/history/sita-logo.svg"
+  },
+  {
+    "role": "Développeur Front UI",
+    "organisation": "Comparadise",
+    "startDate": "Avril, 2016",
+    "endDate": "Juillet, 2017",
+    "experiences": [
+      "UI Design de landing pages",
+      "Développement UI",
+      "Intégration d'emails"
+    ],
+    "imageSrc": "images/history/comparadise-logo.jpg"
+  }
+]

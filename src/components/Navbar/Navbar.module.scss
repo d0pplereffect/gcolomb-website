@@ -1,0 +1,131 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 10%;
+  padding-top: $space-stack-xlarge;
+  z-index: 2;
+}
+
+.title {
+  font-family: $font-roboto-mono;
+  font-size: ms(8);
+  font-weight: 600;
+  text-decoration: none;
+  color: $white;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItems {
+  display: flex;
+  gap: 47px;
+  list-style-type: none;
+}
+
+.menuItems a {
+  font-size: ms(8);
+  color: $white;
+  text-decoration: none;
+}
+
+.menuBtn {
+  display: none;
+}
+
+@media screen and (min-width: 831px) {
+  .navbar ul li a {
+    position: relative;
+  }
+  .navbar ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: $white;
+    height: 1px;
+  }
+  .navbar ul li a:hover:after {
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    transition: all 2s;
+  }
+
+  .navbar ul li a:after {
+    text-align: left;
+    content: ".";
+    margin: 0;
+    opacity: 0;
+  }
+  .navbar ul li a:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  .navbar ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
+}
+
+/* Keyframes */
+@keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-inline: $base-line-height;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+
+  .menuBtn {
+    display: block;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    padding: 24px 33px;
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 1;
+  }
+}

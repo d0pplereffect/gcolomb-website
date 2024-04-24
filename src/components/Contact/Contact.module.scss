@@ -1,0 +1,56 @@
+@import "./../../styles/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-inline: 10%;
+  margin-top: $space-stack-xxlarge;
+  padding-block: $space-stack-xxlarge;
+  border-top: 1px solid $white;
+  font-size: ms(6);
+}
+
+.description {
+  width: 300px;
+  background: $border-red;
+  background-repeat: no-repeat;
+  padding: $space-inset-large;
+}
+
+.contacts {
+  display: flex;
+  font-size: ms(6);
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $base-line-height;
+    list-style-type: none;
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      a {
+        color: $color-primary;
+      }
+      img {
+        width: auto;
+        height: ms(6);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-inline: $space-inline-medium;
+  }
+
+  .description {
+    margin-bottom: $space-stack-large;
+  }
+}
